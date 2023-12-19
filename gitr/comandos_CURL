@@ -1,0 +1,17 @@
+# ==Crear PR==
+curl -X POST -isS  -H "Content-Type: application/json" -d '{"id":1,"title":"PR para demo","description":"Mergeamos dos branches triviales con conflict","head":"branch","base":"master","status":"open"}' localhost:9410/repos/demo/pulls
+
+# ==Listar PR==
+curl -X GET -isS  localhost:9410/repos/demo/pulls
+
+# ==Obtener el PR # ==
+curl -X GET -isS  localhost:9410/repos/demo/pulls/0
+
+# ==Obtener los commits del PR # ==
+curl -X GET -isS  localhost:9410/repos/demo/pulls/0/commits
+
+# ==Mergear un PR ==
+curl -X PUT -isS  localhost:9410/repos/demo/pulls/0/merge
+
+# ==Modificar un PR ==
+curl -X PATCH -isS  -H "Content-Type: application/json" -d '{"id":0,"title":"Lo modifiqué","description":"esta cambiado","head":"branch","base":"master","status":"open"}' localhost:9410/repos/demo/pulls/0
