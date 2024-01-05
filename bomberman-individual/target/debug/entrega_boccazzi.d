@@ -1,0 +1,1 @@
+/home/gianni/reentrega_boccazzi/target/debug/entrega_boccazzi: /home/gianni/reentrega_boccazzi/src/error_laberinto.rs /home/gianni/reentrega_boccazzi/src/laberinto.rs /home/gianni/reentrega_boccazzi/src/main.rs /home/gianni/reentrega_boccazzi/src/piezas.rs

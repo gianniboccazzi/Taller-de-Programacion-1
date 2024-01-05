@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Piezas"],"fn":["obtener_letra_posicion"]};
